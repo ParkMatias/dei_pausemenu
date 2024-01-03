@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/nui/Gilroy-ExtraBold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+button{
+    color:white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.container{
+    display: none;
+    grid-template-areas:
+    "header header"
+    "body body";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15rem auto;
+    height: 100vh;
+    width: 100vw;
+    margin:auto;
+    border-radius: 20px;
+    background-color: #0d363dbd;
+}
+
+.header {
+    grid-area: header;
+    padding: 40px;
+    color:gray;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 12.5px;
+}
+
+.userinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(108deg, rgba(93, 204, 184, 0.5) 0%, rgba(3,149,184, 0.5) 100%);
+    border: 1px solid #1bf7ce;
+    border-radius: 12.5px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.info #name{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 12.5px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    gap: 1rem;
+}
+
+.jobndgrade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(108deg, rgba(93, 204, 184, 0.5) 0%, rgba(3,149,184, 0.5) 100%);
+    border: 1px solid #1bf7ce;
+    padding: .3rem .7rem;
+    border-radius: 12.5px;
+    width: auto;
+    height: 2.5rem;
+}
+
+.bankacc, .cashacc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(108deg, rgba(93, 204, 184, 0.5) 0%, rgba(3,149,184, 0.5) 100%);
+    border: 1px solid #1bf7ce;
+    padding: .3rem .7rem;
+    border-radius: 12.5px;
+    width: auto;
+    height: 2.5rem;
+}
+
+.userimage img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.onlinejobs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 12.5px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    background-image: linear-gradient(108deg, rgba(93, 204, 184, 0.5) 0%, rgba(3,149,184, 0.5) 100%);
+    border: 1px solid #1bf7ce;
+}
+
+.ojob{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 12.5px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+}
+
+.onlinejobs i{
+    font-size: 2rem;
+}
+
+.userbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 12.5px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+}
+
+.userbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(108deg, rgba(93, 204, 184, 0.5) 0%, rgba(3,149,184, 0.5) 100%);
+    border: 1px solid #1bf7ce;
+    border-radius: 12.5px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+}
+
+.userbtn i{
+    font-size: 5rem;
+}
+
+.userbtn button{
+    margin-left: 1rem;
+}
+
+.body {
+    grid-area: body;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem;
+}
+
+.text-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-container p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.body-left, .body-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem;
+}
+
+.ltop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem;
+}
+
+.lsub{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.bt1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24rem;
+    height: 15rem;
+    border-radius: 12.5px;
+    border: 3px solid #1bf7ce;
+    background-image: linear-gradient(108deg, rgba(93, 204, 184, 0.5) 0%, rgba(3,149,184, 0.5) 100%);
+}
+
+.bt2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24rem;
+    height: 15rem;
+    border-radius: 12.5px;
+    border: 3px solid #1bf7ce;
+    background-image: linear-gradient(108deg, rgba(93, 204, 184, 0.5) 0%, rgba(3,149,184, 0.5) 100%);
+}
+
+.bt3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24rem;
+    height: 15rem;
+    border-radius: 12.5px;
+    border: 3px solid #1bf7ce;
+    background-image: linear-gradient(108deg, rgba(93, 204, 184, 0.5) 0%, rgba(3,149,184, 0.5) 100%);
+}
+
+.bt4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24rem;
+    height: 15rem;
+    border-radius: 12.5px;
+    border: 3px solid #1bf7ce;
+    background-image: linear-gradient(108deg, rgba(93, 204, 184, 0.5) 0%, rgba(3,149,184, 0.5) 100%);
+}
+
+.bt5{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25rem;
+    height: 32rem;
+    border-radius: 12.5px;
+    border: 3px solid #1bf7ce;
+    background-image: linear-gradient(108deg, rgba(93, 204, 184, 0.5) 0%, rgba(3,149,184, 0.5) 100%);
+}
