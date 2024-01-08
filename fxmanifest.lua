@@ -22,5 +22,6 @@ files {
     'nui/style.css',
     'nui/script.js',
     'nui/*.otf',
-    'nui/*.jgp'
+    'nui/*.jgp',
+    'nui/*.jpeg'
 }

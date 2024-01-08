@@ -6,7 +6,6 @@ Citizen.CreateThread(function()
         SetPauseMenuActive(false)
         if (IsControlJustPressed(0, 200)) then
             ESX.TriggerServerCallback('dei_pausemenu:getJobs', function(cJobs)
-                TransitionToBlurred(1000)
                 SetNuiFocus(true, true)
                 local MugShot = exports["MugShotBase64"]:GetMugShotBase64(PlayerPedId(), true)
                 GetPlayerData(
@@ -48,6 +47,5 @@ GetPlayerData = function(cb)
 end
 
 CloseNUI = function()
-    TransitionFromBlurred(1000)
     SetNuiFocus(false, false)
 end

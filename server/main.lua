@@ -4,7 +4,6 @@ local polices = 0
 local ambulances = 0
 local mecanos = 0
 local taxi = 0
-
 local countedPlayers = {}
 
 ESX.RegisterServerCallback('dei_pausemenu:getJobs', function(source, cb)

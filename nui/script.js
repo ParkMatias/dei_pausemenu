@@ -1,9 +1,9 @@
 $(document).ready(function() {
     window.addEventListener('message', function(event) {
-        var item = event.data;
-        var playerdata = item.playerdata;
-        var job = item.jobs;
-        var mugshot = item.mugshot;
+        const item = event.data;
+        const playerdata = item.playerdata;
+        const job = item.jobs;
+        const mugshot = item.mugshot;
         if (item.open == true) {
             $('.container').css('display', 'grid');
             $('#name').html(playerdata.name);
@@ -24,7 +24,4 @@ $(document).ready(function() {
         }));
         $('.container').css('display', 'none');
     });
-
-
-    
 });
